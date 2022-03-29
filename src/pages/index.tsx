@@ -1,4 +1,4 @@
-import { Flex, Button, Stack, FormLabel, FormControl } from '@chakra-ui/react';
+import { Flex, Button, Stack } from '@chakra-ui/react';
 import { Input } from '../components/Form/Input';
 
 export default function SignIn() {
@@ -30,7 +30,6 @@ export default function SignIn() {
         </Stack>
 
         <Button type="submit" mt="6" colorScheme="pink" size='lg' >Entrar</Button>
-
 
       </Flex>
     </Flex>
