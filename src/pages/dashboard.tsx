@@ -26,14 +26,17 @@ const options: ApexOptions = {
         enabled: false
     },
     xaxis: {
-        type: "datetime",
+        labels: {
+            formatter: function (val) {
+                return new Date(val).toLocaleDateString()
+            },
+        },
         axisBorder: {
             color: theme.colors.gray[600]
         },
         axisTicks: {
             color: theme.colors.gray[600]
         },
-
         categories: [
             '2021-03-18T00:00:00.000Z',
             '2021-03-19T00:00:00.000Z',
@@ -56,7 +59,7 @@ const options: ApexOptions = {
 }
 
 const series = [
-    { name: 'series1', data: [31, 120, 10, 28, 61, 18, 109] }
+    { name: 'series1', data: [31, 120, 10, 28, 61, 18, 109] },
 ]
 
 export default function Dashboard() {
