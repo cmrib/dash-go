@@ -35,7 +35,6 @@ export function makeServer() {
         routes() {
             this.namespace = 'api';
             this.timing = 750;
-
             this.get('/users', function (schema, request) {
 
                 const { page = 1, per_page = 10 } = request.queryParams
@@ -46,7 +45,7 @@ export function makeServer() {
                     .users.slice(pageStart, pageEnd)
                 return new Response(
                     200,
-                    { 'x-total-count:': String(total) },
+                    { 'x-total-count': String(total) },
                     { users }
                 )
             })
