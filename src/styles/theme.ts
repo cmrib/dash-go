@@ -28,8 +28,7 @@ const config = {
         }
     },
     initialColorMode: 'light',
-    useSystemColorMode: false
+    useSystemColorMode: true
 }
-
 
 export const theme = extendTheme({ config })
