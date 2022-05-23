@@ -17,13 +17,12 @@ export function SearchBox() {
             alignSelf="center"
             color="gray.200"
             position="relative"
-            bg="gray.800"
             borderRadius="full"
             align="center"
         >
             <Input
                 color="gray.50"
-                variant="unstyled"
+                variant="filled"
                 px="4"
                 mr="4"
                 placeholder="Buscar na plataforma"

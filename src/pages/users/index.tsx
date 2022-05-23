@@ -34,7 +34,7 @@ export default function UserList() {
             <Flex w="100%" maxWidth={1480} mx="auto" px="6" >
                 <Sidebar />
 
-                <Box flex="1" borderRadius={8} bg="gray.800" p="8">
+                <Box flex="1" borderRadius={8} p="8">
                     <Flex mb="8" justify="space-between" align="center">
                         <Heading size="large" fontWeight="normal" >Usuários {!isLoading && isFetching && <Spinner size="sm" color="gray.500" ml="4" />}
                         </Heading>
@@ -58,7 +58,7 @@ export default function UserList() {
                         </Flex>
                     ) : (
                         <>
-                            <Table colorScheme="whiteAlpha">
+                            <Table>
                                 <Thead>
                                     <Tr>
                                         <Th px={["4", "4", "6"]} color="gray.300" width="8">
@@ -107,7 +107,7 @@ export default function UserList() {
                         </>
                     )}
                 </Box>
-            </Flex>
-        </Box>
+            </Flex >
+        </Box >
     );
 }   
